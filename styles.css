@@ -1,0 +1,156 @@
+/* Estilos generales */
+* {
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    padding-top: 10px;
+}
+
+#intro-p {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+/* Header */
+header .contenedorheader {
+    padding: 60px 100px;
+
+  }
+ header a:hover {
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .logo-header {
+    width: 250px;
+    height: auto;
+  }
+
+  .nav-item {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+  }
+  
+/* Estilos para botones */
+.agregarBtn, #finalizarBtn, #carritoLista li button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #5e81ac;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.agregarBtn:hover, #finalizarBtn:hover, #carritoLista li button:hover {
+    background-color: #434c5e;
+}
+
+/* Estilos para el contenedor de productos */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Estilos para las imágenes de los productos */
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: auto;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.producto img:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el carrito */
+#carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#carritoLista {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carritoLista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el total a pagar */
+#totalPagar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#carrito ul {
+    display: inline;
+    margin: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para finalizar*/
+#div-finalizar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Estilos footer*/
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+  footer .contenedorfooter {
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+  }
+  footer .contenedorfooter .ULfooter {
+    list-style: none;
+    display: flex;
+  }
+  footer .contenedorfooter .LIfooter {
+    width: 30px;
+    height: 30px;
+    margin: 2rem;
+  }

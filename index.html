@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita de Casanova</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<!--HEADER-->
+<header class="contenedorheader">
+  <!--HEADER BOOSTRAP-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img class=logo-header style="position: relative;" src="https://images.squarespace-cdn.com/content/v1/59d14796268b96ef862ad00e/1547749218259-X8ZTG2BLTKLWNQ68A0SE/LogoFin_Black.png?format=1500w" alt="logo-tienda">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="ul-navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Collab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Política</a>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Acceso</a>
+            </li>
+            </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </header>
+<!--MAIN-->
+<main>
+    <h1>¡Bienvenido a la tiendita de Casanova!</h1>
+    <p id="intro-p">A continuación podrás ver nuestro listado de productos disponibles:</p>
+    <div id="productos" class="flex-container">
+        <!-- Producto 1: Camiseta -->
+        <div class="producto">
+            <img src="https://www.gustore.cl/temp/img/poleras/poleraNegra_800x859.png?v=new7" alt="Camiseta">
+            <p>Camiseta</p>
+            <p>$15000</p>
+            <button class="agregarBtn" data-nombre="Camiseta">Agregar al carrito</button>
+        </div>
+        <!-- Producto 2: Gorra -->
+        <div class="producto">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_978698-MLC51680153674_092022-O.webp" alt="Gorra">
+            <p>Gorra</p>
+            <p>$20000</p>
+            <button class="agregarBtn" data-nombre="Gorra">Agregar al carrito</button>
+        </div>
+        <!-- Producto 3: Hoodie -->
+        <div class="producto">
+            <img src="https://i.ebayimg.com/thumbs/images/g/fpAAAOSwPChjLW~R/s-l640.jpg" alt="Hoodie">
+            <p>Hoodie</p>
+            <p>$60000</p>
+            <button class="agregarBtn" data-nombre="Hoodie">Agregar al carrito</button>
+        </div>
+        <!-- Producto 4: Pantalón -->
+        <div class="producto">
+            <img src="https://cdnx.jumpseller.com/cuarto-turno/image/24209951/resize/640/640?1657144276" alt="Pantalón">
+            <p>Pantalón</p>
+            <p>$25000</p>
+            <button class="agregarBtn" data-nombre="Pantalon">Agregar al carrito</button>
+        </div>
+        <!-- Producto 5: Zapatillas -->
+        <div class="producto">
+            <img src="https://i.ebayimg.com/images/g/bKgAAOSwR21kYObg/s-l1200.webp" alt="Zapatillas">
+            <p>Zapatillas</p>
+            <p>$70000</p>
+            <button class="agregarBtn" data-nombre="Zapatillas">Agregar al carrito</button>
+        </div>
+        <!-- Producto 6: Shoulder Bag -->
+        <div class="producto">
+            <img src="https://www.streetwearofficial.com/cdn/shop/products/sup-bag_grande.jpg?v=1555296959" alt="Shoulder Bag">
+            <p>Shoulder Bag</p>
+            <p>$40000</p>
+            <button class="agregarBtn" data-nombre="Shoulder Bag">Agregar al carrito</button>
+        </div>
+    </div>
+    <hr size="2px" width="100%" noshade="noshade"/>
+    <!-- Div para mostrar carrito -->
+    <div id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="carritoLista"></ul>
+    </div>
+    <div id="div_totalPagar"></div>
+        <p id="totalPagar"></p>
+    </div>
+    <div id="div-finalizar">
+    <button id="finalizarBtn">Finalizar compra</button>
+</div>
+</main>
+<hr size="2px" width="100%" noshade="noshade"/>
+<!--FOOTER-->
+<footer>
+    <h3>Síguenos en nuestras redes</h3>
+    <div class="contenedorfooter">
+        <ul class="ULfooter">
+            <li>
+              <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="LIfooter" alt="Logo instagram"></a>
+            </li>
+            <li>
+                <a href="https://facebook.com" target="_blank"> <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-21.png" class="LIfooter" alt="Logo facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank"> <img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" class="LIfooter" alt="Logo twitter"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+

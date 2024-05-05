@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta",
+        "precio": 15000,
+        "descripcion": "Una camiseta oversize de algodón suave y cómoda.",
+        "imagen": "https://www.gustore.cl/temp/img/poleras/poleraNegra_800x859.png?v=new7"
+    },
+    {
+        "id": 2,
+        "nombre": "Gorra",
+        "precio": 20000,
+        "descripcion": "Una gorra ajustable para protegerte del sol.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_978698-MLC51680153674_092022-O.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Hoodie",
+        "precio": 60000,
+        "descripcion": "Un polerón con capucha con capucha para mantenerte abrigado y mantener todo el estilo.",
+        "imagen": "https://i.ebayimg.com/thumbs/images/g/fpAAAOSwPChjLW~R/s-l640.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Pantalón",
+        "precio": 25000,
+        "descripcion": "Un pantalón cargo resistente y a la moda.",
+        "imagen": "https://cdnx.jumpseller.com/cuarto-turno/image/24209951/resize/640/640?1657144276"
+    },
+    {
+        "id": 5,
+        "nombre": "Zapatillas",
+        "precio": 70000,
+        "descripcion": "Zapatillas que reflejan tu estilo.",
+        "imagen": "https://i.ebayimg.com/images/g/bKgAAOSwR21kYObg/s-l1200.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Shoulder Bag",
+        "precio": 40000,
+        "descripcion": "Una bolsa de hombro funcional y moderna.",
+        "imagen": "https://www.streetwearofficial.com/cdn/shop/products/sup-bag_grande.jpg?v=1555296959"
+    }
+]

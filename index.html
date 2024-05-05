@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiendita de Casanova</title>
+    <!-- BIBLIOTECA EXTERNA JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--OTROS ENLACES-->
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="main.js" defer></script>
@@ -48,50 +51,7 @@
 <main>
     <h1>¡Bienvenido a la tiendita de Casanova!</h1>
     <p id="intro-p">A continuación podrás ver nuestro listado de productos disponibles:</p>
-    <div id="productos" class="flex-container">
-        <!-- Producto 1: Camiseta -->
-        <div class="producto">
-            <img src="https://www.gustore.cl/temp/img/poleras/poleraNegra_800x859.png?v=new7" alt="Camiseta">
-            <p>Camiseta</p>
-            <p>$15000</p>
-            <button class="agregarBtn" data-nombre="Camiseta">Agregar al carrito</button>
-        </div>
-        <!-- Producto 2: Gorra -->
-        <div class="producto">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_978698-MLC51680153674_092022-O.webp" alt="Gorra">
-            <p>Gorra</p>
-            <p>$20000</p>
-            <button class="agregarBtn" data-nombre="Gorra">Agregar al carrito</button>
-        </div>
-        <!-- Producto 3: Hoodie -->
-        <div class="producto">
-            <img src="https://i.ebayimg.com/thumbs/images/g/fpAAAOSwPChjLW~R/s-l640.jpg" alt="Hoodie">
-            <p>Hoodie</p>
-            <p>$60000</p>
-            <button class="agregarBtn" data-nombre="Hoodie">Agregar al carrito</button>
-        </div>
-        <!-- Producto 4: Pantalón -->
-        <div class="producto">
-            <img src="https://cdnx.jumpseller.com/cuarto-turno/image/24209951/resize/640/640?1657144276" alt="Pantalón">
-            <p>Pantalón</p>
-            <p>$25000</p>
-            <button class="agregarBtn" data-nombre="Pantalon">Agregar al carrito</button>
-        </div>
-        <!-- Producto 5: Zapatillas -->
-        <div class="producto">
-            <img src="https://i.ebayimg.com/images/g/bKgAAOSwR21kYObg/s-l1200.webp" alt="Zapatillas">
-            <p>Zapatillas</p>
-            <p>$70000</p>
-            <button class="agregarBtn" data-nombre="Zapatillas">Agregar al carrito</button>
-        </div>
-        <!-- Producto 6: Shoulder Bag -->
-        <div class="producto">
-            <img src="https://www.streetwearofficial.com/cdn/shop/products/sup-bag_grande.jpg?v=1555296959" alt="Shoulder Bag">
-            <p>Shoulder Bag</p>
-            <p>$40000</p>
-            <button class="agregarBtn" data-nombre="Shoulder Bag">Agregar al carrito</button>
-        </div>
-    </div>
+    <div id="productos" class="flex-container"></div>
     <hr size="2px" width="100%" noshade="noshade"/>
     <!-- Div para mostrar carrito -->
     <div id="carrito">
@@ -99,11 +59,24 @@
         <ul id="carritoLista"></ul>
     </div>
     <div id="div_totalPagar"></div>
-        <p id="totalPagar"></p>
-    </div>
+    <p id="totalPagar"></p>
     <div id="div-finalizar">
-    <button id="finalizarBtn">Finalizar compra</button>
-</div>
+        <button id="finalizarBtn">Finalizar compra</button>
+    </div>
+
+    <!-- Contenedor para mensajes de interacción -->
+    <div id="mensaje-interaccion"></div>
+
+    <!-- Ventana emergente -->
+    <div id="ventanaEmergente" class="ventana-emergente">
+        <div class="contenido-ventana">
+            <span class="cerrar">&times;</span>
+            <p id="contenidoVentana"></p>
+            <div id="botonesVentana">
+                <!-- Botones dinámicos -->
+            </div>
+        </div>
+    </div>
 </main>
 <hr size="2px" width="100%" noshade="noshade"/>
 <!--FOOTER-->
@@ -126,8 +99,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
